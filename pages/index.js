@@ -3,7 +3,6 @@ import Guitarras from "../components/guitarra"
 import Post from "../components/Post"
 import Curso from '../components/curso'
 import styles from '../styles/grid.module.css'
-import Link from "next/link"
 import stylesBlog from '../styles/grid.module.css'
 
 export default function Home({guitarras, blogs, curso}) {
