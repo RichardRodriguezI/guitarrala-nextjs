@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }) {
 
 } 
 export const imgUrl = (imagen) => {
-  const baseUrl = "http://localhost:1337";
+  const baseUrl = "https://res.cloudinary.com/dznsqqnt9/image";
   let img = baseUrl + imagen;
 
 
