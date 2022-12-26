@@ -51,7 +51,6 @@ export default function App({ Component, pageProps }) {
       agregarCarrito={agregarCarrito}
       eliminarGuitarra={eliminarGuitarra} 
       actualizarCantidad={actualizarCantidad}
-      imgUrl={imgUrl}
   />: null
 
 } 

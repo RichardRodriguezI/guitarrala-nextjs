@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import { useState, useEffect  } from 'react'
 import styles from '../styles/carrito.module.css'
-
+import Image from 'next/image'
 
 export default function Carrito({carrito, actualizarCantidad, eliminarGuitarra}) {
    const [total, setTotal] = useState(0)
@@ -21,7 +21,7 @@ export default function Carrito({carrito, actualizarCantidad, eliminarGuitarra})
                     carrito.map( producto => (
                       <div key={producto.id} className={styles.producto}>
                         <div>
-                        <img width={450} height={400} src={producto.imagen} alt={producto.nombre}/>
+                        <Image width={450} height={400} src={producto.imagen} alt={producto.nombre}/>
                         </div>
                         <div>
                         <p className={styles.nombre}>{producto.nombre}</p>

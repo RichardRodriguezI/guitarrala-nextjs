@@ -14,7 +14,7 @@ export default function Header() {
           <Link href='/'>
           <Image src="/img/logo.svg" width={300}height={40}  alt='Imagen logotipo'/>
           </Link>
-          <mav className={styles.navegacion}>
+          <nav className={styles.navegacion}>
               <Link href='/' className={ router.pathname === '/' ? styles.active : ''}>
               Inicio
               </Link>
@@ -30,7 +30,7 @@ export default function Header() {
                <Image width={30} height={25} src='/img/carrito.png' alt='Imagen Carrito'/>
               </Link>
               
-          </mav>
+          </nav>
         </div>
     </header>
   )

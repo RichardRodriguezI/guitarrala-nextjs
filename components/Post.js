@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/blog.module.css'
+import Image from 'next/image';
 import { formatearFecha } from '../utils/helpers'
 
 export default function Post({post}) {
@@ -9,7 +10,7 @@ export default function Post({post}) {
 
   return (
     <article>
-        <img src={imagen.data.attributes.url} alt={`Imagen blog ${titulo}`} width={600} height={400}/>
+        <Image src={imagen.data.attributes.url} alt={`Imagen blog ${titulo}`} width={600} height={400}/>
         <div className={styles.contenido}>
           <h3>{titulo}</h3>
           <p className={styles.fecha}>{formatearFecha(publishedAt)}</p>

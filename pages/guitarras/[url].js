@@ -17,7 +17,7 @@ export default function Producto({guitarra, agregarCarrito}) {
   // Construir un objeto
   const guitarraSeleccionada = {
     id: guitarra[0].id,
-    imagen: urlImg,
+    imagen: imagen.data.attributes.url,
     nombre,
     precio,
     cantidad
