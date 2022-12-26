@@ -55,10 +55,4 @@ export default function App({ Component, pageProps }) {
   />: null
 
 } 
-export const imgUrl = (imagen) => {
-  const baseUrl = "https://res.cloudinary.com/dznsqqnt9/image";
-  let img = baseUrl + imagen;
 
-
-  return img;
-}
