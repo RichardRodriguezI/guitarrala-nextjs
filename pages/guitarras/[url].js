@@ -1,6 +1,5 @@
 import styles from '../../styles/guitarras.module.css'
 import Layout from '../../components/layout'
-import { imgUrl } from '../../pages/_app'
 import { useState } from 'react'
 
 export default function Producto({guitarra, agregarCarrito}) {
@@ -28,14 +27,14 @@ export default function Producto({guitarra, agregarCarrito}) {
    agregarCarrito(guitarraSeleccionada)
   }
 
-  const urlImg = imgUrl(imagen.data.attributes.url);
+
   return (
     <Layout 
     title={`Guitarra ${nombre}`}
     >
     <div>
        <div className={styles.guitarra} >
-        <img src={urlImg} width={600} height={400}  alt={`Imagen guitarra ${nombre}`}/>
+        <img src={imagen.data.attributes.url} width={600} height={400}  alt={`Imagen guitarra ${nombre}`}/>
 
       <div className={styles.contenido}>
       <h3>{nombre}</h3>
